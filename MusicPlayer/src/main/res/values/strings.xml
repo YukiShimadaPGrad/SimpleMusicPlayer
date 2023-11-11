@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="content_description_album_art">Album art</string>
+    <string name="content_description_skip_prev">Skip to prev</string>
+    <string name="content_description_play_or_pause">Play / Pause</string>
+    <string name="content_description_skip_next">Skip to next</string>
+    <string name="content_description_repeat">Change repeat mode</string>
+    <string name="musiclibrary_toast_loading">Collecting all audio metadata…</string>
+    <string name="menu_title_queue">View queue</string>
+    <string name="queue_text_description">Music Queue. It is sortable by long tap.</string>
+    <string name="menu_title_player">Show Player</string>
+    <string name="content_description_btn_optional">Apply optional function</string>
+    <string name="content_description_playing">The music is playing.</string>
+    <string name="content_description_shuffle">Shuffle current queue</string>
+    <string name="content_description_save">Save</string>
+    <string name="input_hint_playlist">Input a playlist name.</string>
+    <string name="content_description_delete">Delete</string>
+    <string name="input_hint_delete_playlist">Input a playlist name for delete.</string>
+    <string name="menu_title_reload">Reload</string>
+    <string name="label_switch_use_equalizer">Use equalizer</string>
+    <string name="label_switch_use_bass_booster">Use bass booster.</string>
+    <string name="high">High</string>
+    <string name="Low">Low</string>
+    <string name="label_seekbar_bass_boost">Bass boost</string>
+    <string name="menu_title_equalizer">Audio Fx</string>
+</resources>

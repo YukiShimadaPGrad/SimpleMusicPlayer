@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icon_notification_large_size">256dp</dimen>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/playing"
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/content_description_playing"
+        android:scaleType="fitCenter"
+        android:src="@drawable/controls_play"
+        android:tint="?android:attr/textColorSecondary"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/album_art"
+        android:layout_width="@dimen/icon_imageview_width"
+        android:layout_height="@dimen/icon_imageview_height"
+        android:contentDescription="@string/content_description_album_art"
+        tools:src="@android:drawable/ic_dialog_info" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2"
+            android:minLines="2"
+            android:singleLine="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="タイトルをここに書き込むぞーーーーーーーーーーーーーーーーーあいうえおかきくけこ" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                tools:text="ここにアルバム名とかを書くぞーーーーー" />
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:singleLine="true"
+                android:textAlignment="center"
+                tools:text="12:34" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_optional"
+        android:layout_width="@dimen/btn_optional_size"
+        android:layout_height="@dimen/btn_optional_size"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/content_description_btn_optional"
+        android:scaleType="fitCenter"
+        android:tint="?android:attr/textColorSecondary"
+        tools:src="@drawable/add" />
+</LinearLayout>

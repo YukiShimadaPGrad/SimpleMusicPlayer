@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/playlist_title_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:ems="10"
+            android:hint="@string/input_hint_playlist"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05" />
+
+        <ImageButton
+            android:id="@+id/save_playlist"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/content_description_save"
+            android:scaleType="fitCenter"
+            android:src="@drawable/save_as"
+            android:tint="?android:attr/colorControlNormal" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/playlists"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/playlist_title_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:ems="10"
+            android:hint="@string/input_hint_delete_playlist"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05" />
+
+        <ImageButton
+            android:id="@+id/delete_playlist"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/content_description_delete"
+            android:scaleType="fitCenter"
+            android:src="@drawable/delete"
+            android:tint="?android:attr/colorControlNormal" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05" />
+
+    </LinearLayout>
+
+</LinearLayout>
